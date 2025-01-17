@@ -26,9 +26,6 @@
 
 <style>
 
-/*======================================
-//--//-->   ABOUT
-======================================*/
 
 .about-mf .box-shadow-full {
   padding-top: 4rem;
@@ -45,7 +42,7 @@
 
 
 .skill-mf .progress {
-  /* background-color: #cde1f8; */
+
   margin: .5rem 0 1.2rem 0;
   border-radius: 0;
   height: .7rem;
@@ -57,7 +54,6 @@
 }
 
 
-/* Animation styles */
 #typing-animation {
   position: relative;
   font-size: 30px;
@@ -70,7 +66,6 @@
 
 #typing-animation:before {
   content: "";
-  /* position: absolute; */
   top: 0;
   left: 0;
   width: 0;
@@ -98,7 +93,6 @@
 }
 
 
-/* project image zoom effect */
 
 .zoom-effect {
   overflow: hidden;
@@ -141,8 +135,8 @@
 	      	<div class="overlay"></div>
 	         <div class="container">
 	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<!-- <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/myphoto-removebg-preview.png);"> -->
-	          	 <div style="height: 70vh; width: 50%;"><img src="images/Web-Developer.jpg" alt="">
+	    
+	          	 <div style="height: 70vh; width: 100%;"><img src="images/download.jpeg" alt="">
 					<div class="overlay"></div>
 	          	</div>
 		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
@@ -150,36 +144,31 @@
 		          		<span class="subheading">Hello!</span>
 			            <h1 class="mb-4 mt-3">I'm <span>Punit Sahu</span></h1>
 
-						<!-- Element to contain animated typing -->
 						<span id="typing-animation"></span>
 
 						<script>
 
-						// Initialize the typing animation
 						const typingAnimationElement = document.getElementById('typing-animation');
 
-						// Create an array of typing text
 						const typingTexts = [
 					     'Developer   ',
 						];
 
-						// Create a function to display the typing animation for a given text
+						
 						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
+						
 						for (let i = 0; i < text.length; i++) {
 							setTimeout(() => {
 							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
+							}, i * 200); 
 						}
 
-						// Once the animation is complete, reset the text and start over
 						setTimeout(() => {
 							typingAnimationElement.textContent = '';
 							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
 						}, text.length * 200);
 						}
 
-						// Start the typing animation loop
 						playTypingAnimation(typingTexts[0]);
 
 						</script>
@@ -187,8 +176,7 @@
 						<br>
 						<br>
 			            <h2>A Mern Stack Developer</h2>
-						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-						<!-- <br> -->
+						
 			            <p>
 							<a href="https://github.com/punitsahu9039" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
 		            </div>
@@ -205,7 +193,6 @@
     	<div class="container">
 			<div class="row">
 				<div class="row d-flex align-items-stretch">
-				<!-- <div class="row d-flex"> -->
 					<div class="col-md-6 col-lg-5 d-flex">
 						<div class="img-about img d-flex align-items-stretch">
 							<div class="overlay">
@@ -215,7 +202,6 @@
 										<img src="images/myphoto-removebg-preview.png" class="img-fluid rounded b-shadow-a" alt="">
 									  </div>
 									</div>
-									<!-- Details next to profile image -->
 									<div class="col-sm-6 col-md-7">
 									  <div class="about-info">
 										<p><span class="title-s">Name: </span> <span>Punit Sahu</span></p>
@@ -442,7 +428,6 @@
           </div>
         </div>
 	<br>
-		<!-- added justify-content-center to center align the last two projects -->
 		<div class="row d-flex justify-content-center">  
 			<div class="col-md-4 d-flex ftco-animate">
 				<div class="blog-entry justify-content-end">
@@ -480,14 +465,7 @@
 	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
       <div class="container">
 		<div class="row d-md-flex align-items-center">
-          <!-- <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="">0</strong>
-                <span>Achievements</span>
-              </div>
-            </div>
-          </div> -->
+       
           <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18">
               <div class="text">
@@ -496,14 +474,7 @@
               </div>
             </div>
           </div>
-          <!-- <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="">0</strong>
-                <span>Mentored Students</span>
-              </div>
-            </div>
-          </div> -->
+       
           <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18">
               <div class="text">
@@ -516,7 +487,6 @@
       </div>
 	
 	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
-			<!-- <div class="container"> -->
 				<div class="row justify-content-center">
 					<div class="col-md-7 ftco-animate text-center">
 						<h2>More projects on<span> Github  </span> </h2>
@@ -526,7 +496,6 @@
 						</div>
 					</div>
 				</div>
-			<!-- </div> -->
 		</div>
 	</section>
 
@@ -607,16 +576,15 @@
 		  <div class="row">
 			<div class="col-md-12 text-center">
   
-			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+			  <p>
 	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+	></p>
 			</div>
 		  </div>
 		</div>
 	  </footer>
 
 
-  <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 
